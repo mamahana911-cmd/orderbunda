@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Order Produk</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    min-height:100vh;
+    padding:16px;
+}
+
+.container{
+    width:100%;
+    max-width:420px;
+    background:#fff;
+    border-radius:16px;
+    padding:24px;
+margin-bottom:20px;
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:18px;
+}
+
+.logo img{
+    width:120px;
+    max-width:35%;
+    height:auto;
+}
+
+h1{
+    font-size:22px;
+    text-align:center;
+    color:#222;
+}
+
+.desc{
+    text-align:center;
+    color:#666;
+    font-size:14px;
+    margin:10px 0 25px;
+    line-height:1.5;
+}
+
+label{
+    display:block;
+    margin-bottom:6px;
+    margin-top:16px;
+    font-size:14px;
+    font-weight:bold;
+    color:#333;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:13px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:15px;
+    outline:none;
+}
+
+textarea{
+    resize:vertical;
+    min-height:90px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#25D366;
+}
+
+button{
+    width:100%;
+    margin-top:24px;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#25D366;
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#20be5d;
+}
+
+.footer{
+    margin-top:18px;
+    text-align:center;
+    color:#888;
+    font-size:12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">
+<img src="logo.webp" alt="Logo">
+</div>
+
+<h1>Order Produk</h1>
+
+<p class="desc">
+Silakan isi formulir di bawah ini untuk melakukan pemesanan produk.
+</p>
+
+<form id="form">
+
+<label>Nama Lengkap</label>
+<input type="text" id="nama" required>
+
+<label>Nomor HP</label>
+<input type="tel" id="hp" required>
+
+<label>Alamat Lengkap</label>
+<textarea id="alamat" required></textarea>
+
+<label>Nama Produk</label>
+<input type="text" id="produk" placeholder="Contoh: JuWara Cafe" required>
+
+<label>Jumlah yang ingin dipesan</label>
+<input type="number" id="jumlah" min="1" placeholder="Contoh: 2" required>
+
+<button type="submit">
+Kirim Pesanan
+</button>
+
+</form>
+
+<div class="footer">
+© 2026 kiddy38.my.id
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
